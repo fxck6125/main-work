@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>week-1-project</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<style type="text/css">
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	/* HTML5 display-role reset for older browsers */
+	article, aside, details, figcaption, figure, 
+	footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+	body {
+		line-height: 1;
+	    font-family: 'Noto Sans TC', sans-serif;
+	}
+	ol, ul ,li{
+		list-style: none;
+	}
+	blockquote, q {
+		quotes: none;
+	}
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+	* {
+	  box-sizing: border-box;
+	}
+	.container{
+		 max-width: 1200px;
+		 min-width: 375px;
+		 margin:0px auto;
+	}
+	h1,.subtitle,.each-skill,.footer{
+		font-style:SF Pro Text;
+	}
+	.subtitle{
+		padding-bottom: 8px;
+		border-bottom:  1px solid #000000;
+		margin-bottom: 16px;
+	}
+	.subtitle-ch{
+		font family:Medium PingFang TC;
+		font-size: 32px;
+		font-weight: 700;
+		line-height: 48px;
+		color: #000000;
+	}
+	.profile li,.education li{
+		margin-bottom: 24px;
+		font-size: 24px;
+		line-height: 36px;
+		font-weight: 400;
+	}
+	span{
+		font-size: 24px;
+		line-height: 29px;
+		color: #A00404;
+		font-style:SF Pro Text;
+		margin-left: 16px;
+		font-weight: 500;
+	}
+	h1{
+		font-size:80px;
+		line-height:95px;
+		margin-top:40px;
+		padding-bottom:24px;
+		border-bottom: 2px solid #000000;
+	}
+	.education{
+		margin-top: 48px;
+	}
+	.skills{
+		width: 100%;
+		background-color: #415165;
+		display: flex;
+	    flex-flow:column wrap;
+		align-items: center;
+		justify-content: center;
+		color: white;
+		margin-bottom: 72px;
+	}
+	.skills span{
+		color: white;
+		font-weight: 400;
+	}
+	.subtitle-skills{
+		padding-bottom: 8px;
+		border-bottom: 1px solid #FFFFFF;
+		width:90%
+		margin:0px auto;
+	    width:90%;
+        text-align:center;
+	}
+
+	.subtitle-skills-ch{
+		margin-top: 24px;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 45px;
+		font family:Medium PingFang TC;
+	}
+	.each-skill{
+		margin-top: 40px;
+		margin-bottom: 52px;
+		font-size: 24px;
+		font-weight: 300;
+		line-height: 36px;
+		padding-left: 24px;
+		border-left:1px solid #96A9C4;
+	}
+	.each-skill li{
+		padding-bottom: 10px;
+	}
+	.work-experience ul{
+		margin-left: 24px;
+		border-left: 1px solid #96A9C4;
+		font family:Medium PingFang TC;
+	}
+	.work-experience li{
+		margin-left: 24px;
+	}
+	.strong-2{
+		max-width: 642px;
+		font-size:20px ;
+		line-height: 30px;
+		font-weight: 350;
+
+	}
+	.strong-1,.strong-3{
+		font-size:24px ;
+		line-height: 36px;
+		font-weight: 600;
+	}
+	.strong-3{
+		margin-top: 32px;
+	}
+	.footer{
+		width: 100%;
+		margin-top: 76px;
+		background-color: #415165;
+		color: white;
+		display: flex;
+	    flex-flow:column wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.subtitle-contacts{
+		padding-top: 24px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #FFFFFF;
+		width: 80%;
+		display: flex;
+	    flex-flow:column wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	.subtitle-contacts-ch{
+		font family: PingFang TC;
+		font-size: 32px;
+		line-height: 45px;
+	}
+	.subtitle-contacts span{
+		color: white;
+	}
+	.each-contact{
+		margin-top: 32px;
+		align-items: center;
+	}
+	.each-contact li{
+		font-style:SF Pro Text;
+		font-size:24px;
+		line-height:36px;
+		font-weight: 300;
+		padding-bottom: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.each-contact-link img{
+		padding: 4px 24px 48px 0px;
+	}
+
+	</style>
+
+
+	<div class="container">
+		<h1>Joanne 
+			<br>
+		    Chen
+		</h1>
+		<img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week1/photo.png?raw=true" style="width:324px;margin:48px 0px">
+		<div class="profile">
+			<div class="subtitle">
+				<div class="subtitle-ch">個人資料<span>PROFILE</span></div>
+			</div>
+			<ul>
+				<li>陳久安 Joanne Chen<br> 1997-<br> 應屆畢業生／接案設計師／UI 設計實習生</li>
+				<li>UI 設計修行中／立志當斜槓青年 <br>獨立接案，內容涵蓋：<br> 品牌規劃、視覺設計、編輯設計、標準字、物件及印刷品設計等。</li>
+			</ul>
+				
+			</div>
+			<div class="education">
+			<div class="subtitle">
+				<div class="subtitle-ch">學歷<span>EDUCATION</span></div>
+			</div>
+			<ul>
+				<li>國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</li>
+				<li>國立六腳高級中學 美術班 | 2013－2016</li>
+			</ul>
+		</div>
+		<div class="skills">
+			<div class="subtitle-skills">
+				<div class="subtitle-skills-ch">技能<span>SKILLS</span></div>
+			</div>
+			<ul class="each-skill">
+				<li>Adobe Photoshop</li>
+				<li>Adobe Illustrator</li>
+				<li>Adobe XD</li>
+				<li>Adobe Indesign</li>
+				<li>C4D</li>
+				<li>Adobe Premiere</li>
+				<li style="font-family:PingFang TC">語言：中文、英文</li>
+			</ul>
+		</div>
+		<div class="work-experience">
+			<div class="subtitle">
+				<div class="subtitle-ch">工作經驗<span>WORK EXPERIENCE</span></div>
+			</div>
+			<ul>
+				<li class="strong-1">六角學院 視覺設計實習生 | 2019/07－2020/06</li>
+				<li><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/73b96b545b550aa96af4ab47344778653dcba894/week1/Group%201.svg" style="margin: 8px"></li>
+				<li class="strong-2">在六角學院長達一年的實習中，前期藉由公司課程掌握 HTML, CSS, Adobe XD，設計給學員使用的名片設計教材，並參與六角週年活動，設計各式周邊商品及活動網路宣傳圖。後期進入 UI 設計範疇，設計六角共筆部落格 - W3HexSchool、六角發案服務網介面設計、供給學員的教 案- RWD官方網站設計，並設計各式網頁活動宣傳圖。</li>
+				<li class="strong-3">獨立接案 Hao Jun 酒標設計 | 2019</li>
+				<li class="strong-3">獨立接案 Exulans 酒標設計 | 2019</li>
+				<li class="strong-3">獨立接案 桃園平鎮市民健走活動提案 | 2019</li>
+				<li class="strong-3">Simtree 興趣咖啡 工讀生 | 2018－2019</li>
+				<li><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week1/simtree.png?raw=true" style="margin: 8px"></li>
+				<li class="strong-2">擔任外場及吧台服務生，學習咖啡相關知識。</li>	
+			</ul>
+		</div>
+		</div>
+		
+	</div>
+	<div class="footer">
+		<div class="subtitle-contacts">
+			<div class="subtitle-contacts-ch">聯絡方式<span>CONTACT METHOD</span></div>
+		</div>
+		<ul class="each-contact">
+			<li>Mail：xxxd@hexschool.com</li>
+			<li>Phone：0910123456</li>
+			<li>Kaohsiung, Taiwan</li>
+			<li>作品連結：https://www.behance.net/xxxdddddd</li>
+		</ul>
+		<div class="each-contact-link" alt="facebook">
+			<img src="https://hexschool.github.io/webLayoutTraining1st/week1/facebook.svg" alt="instagram">
+			<img src="https://hexschool.github.io/webLayoutTraining1st/week1/instagram-alt.svg">
+			<img src="https://hexschool.github.io/webLayoutTraining1st/week1/line.svg" alt="line">
+		</div>
+	</div>
+</body>
+</html>
